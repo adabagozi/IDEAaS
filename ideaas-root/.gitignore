@@ -1,0 +1,16 @@
+# da ignorare
+**/Icon
+**/Iconr
+**/build/
+**/nbproject/private/
+**/dist/
+**/target/
+**/resources/input_porta/
+**/resources/input_porta_test/
+**/psb-business-logic/src/main/resources/
+**/.metadata/
+**/.DS_Store
+*.classpath
+**/input_porta/
+**/input_porta_copia/
+*.prefs

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Misure</title>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.sandstone.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.cerulean.min.css">
+		<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+		
+		<script src="js/jquery.min.js"></script>
+
+		<!--<script src="js/jsonToJS.js"></script>
+		<script src="js/jsonHoursToJS.js"></script>-->
+
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Dati Sintesi</h1>
+						<p class="lead">Nei seguenti grafici sono plottati i dati nuovi (in azzurro) e tutti i dati delle sintesi (in grigio) ogni <font color="blue"><strong>ORA</strong></font>.</p>
+						<p>
+							mode = 1 <br>
+							idMachine = 101143 <br>
+							idSpindle = Unit 1.0 <br>
+							idPartProgram = 0171507370 GR6112 <br>
+							featureSpaceID = Corrente - Velocit&agrave; asse Z <br>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+
+			<div id="resultData">
+
+			</div>
+
+		</div>
+		
+
+		<script src="js/bootstrap.min.js"></script>
+   		<script src="js/highcharts.js"></script>
+		<script src="js/highcharts-more.js"></script>
+		<script src="js/highcharts_exporting.js"></script>
+		<script src="js/myJSReadData.js"></script>
+		<!---->
+		<script>
+//			getDataFromServer();
+			$( document ).ready(function() {
+				getDataFromServer();
+			});
+		</script>
+	</body>
+</html>
+

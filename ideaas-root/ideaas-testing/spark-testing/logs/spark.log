@@ -1,0 +1,314 @@
+[INFO] 2018-10-12 10:27:36,622 org.apache.spark.SparkContext logInfo - Running Spark version 2.2.1
+[WARN] 2018-10-12 10:27:36,945 org.apache.hadoop.util.NativeCodeLoader <clinit> - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2018-10-12 10:27:37,109 org.apache.spark.SparkContext logInfo - Submitted application: Perform PI
+[INFO] 2018-10-12 10:27:37,132 org.apache.spark.SecurityManager logInfo - Changing view acls to: ada
+[INFO] 2018-10-12 10:27:37,133 org.apache.spark.SecurityManager logInfo - Changing modify acls to: ada
+[INFO] 2018-10-12 10:27:37,133 org.apache.spark.SecurityManager logInfo - Changing view acls groups to: 
+[INFO] 2018-10-12 10:27:37,134 org.apache.spark.SecurityManager logInfo - Changing modify acls groups to: 
+[INFO] 2018-10-12 10:27:37,134 org.apache.spark.SecurityManager logInfo - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ada); groups with view permissions: Set(); users  with modify permissions: Set(ada); groups with modify permissions: Set()
+[INFO] 2018-10-12 10:27:37,443 org.apache.spark.util.Utils logInfo - Successfully started service 'sparkDriver' on port 54692.
+[INFO] 2018-10-12 10:27:37,470 org.apache.spark.SparkEnv logInfo - Registering MapOutputTracker
+[INFO] 2018-10-12 10:27:37,490 org.apache.spark.SparkEnv logInfo - Registering BlockManagerMaster
+[INFO] 2018-10-12 10:27:37,493 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[INFO] 2018-10-12 10:27:37,493 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - BlockManagerMasterEndpoint up
+[INFO] 2018-10-12 10:27:37,535 org.apache.spark.storage.DiskBlockManager logInfo - Created local directory at /private/var/folders/gn/b9p_qmxd18b02fd00dnx9x840000gn/T/blockmgr-631214f4-35a8-4555-9764-7e6b808d29c4
+[INFO] 2018-10-12 10:27:37,557 org.apache.spark.storage.memory.MemoryStore logInfo - MemoryStore started with capacity 2004.6 MB
+[INFO] 2018-10-12 10:27:37,599 org.apache.spark.SparkEnv logInfo - Registering OutputCommitCoordinator
+[INFO] 2018-10-12 10:27:37,684 org.spark_project.jetty.util.log initialized - Logging initialized @1918ms
+[INFO] 2018-10-12 10:27:37,743 org.spark_project.jetty.server.Server doStart - jetty-9.3.z-SNAPSHOT
+[INFO] 2018-10-12 10:27:37,759 org.spark_project.jetty.server.Server doStart - Started @1995ms
+[INFO] 2018-10-12 10:27:37,780 org.spark_project.jetty.server.AbstractConnector doStart - Started ServerConnector@7c351808{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+[INFO] 2018-10-12 10:27:37,780 org.apache.spark.util.Utils logInfo - Successfully started service 'SparkUI' on port 4040.
+[INFO] 2018-10-12 10:27:37,808 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@72bd06ca{/jobs,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,808 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@6273c5a4{/jobs/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,809 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@53e211ee{/jobs/job,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,810 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@52500920{/jobs/job/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,810 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@18a3962d{/stages,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,811 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2a65bb85{/stages/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,811 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@4f936da8{/stages/stage,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,812 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@76a36b71{/stages/stage/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,813 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@f9d87b{/stages/pool,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,814 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@26fb628{/stages/pool/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,814 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@70dd7e15{/storage,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,815 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@35beb15e{/storage/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,816 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5ac86ba5{/storage/rdd,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,817 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2c9399a4{/storage/rdd/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,817 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@9635fa{/environment,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,818 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@63c5efee{/environment/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,818 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@1c98290c{/executors,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,819 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5bda80bf{/executors/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,819 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2ce86164{/executors/threadDump,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,820 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@51df223b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,826 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@60d8c0dc{/static,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,827 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5f2606b{/,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,828 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@3ebff828{/api,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,829 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@3624da92{/jobs/job/kill,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,829 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@94f6bfb{/stages/stage/kill,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:27:37,831 org.apache.spark.ui.SparkUI logInfo - Bound SparkUI to 0.0.0.0, and started at http://10.20.255.228:4040
+[INFO] 2018-10-12 10:27:37,908 org.apache.spark.executor.Executor logInfo - Starting executor ID driver on host localhost
+[INFO] 2018-10-12 10:27:37,927 org.apache.spark.util.Utils logInfo - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 54693.
+[INFO] 2018-10-12 10:27:37,928 org.apache.spark.network.netty.NettyBlockTransferService logInfo - Server created on 10.20.255.228:54693
+[INFO] 2018-10-12 10:27:37,929 org.apache.spark.storage.BlockManager logInfo - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[INFO] 2018-10-12 10:27:37,931 org.apache.spark.storage.BlockManagerMaster logInfo - Registering BlockManager BlockManagerId(driver, 10.20.255.228, 54693, None)
+[INFO] 2018-10-12 10:27:37,934 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - Registering block manager 10.20.255.228:54693 with 2004.6 MB RAM, BlockManagerId(driver, 10.20.255.228, 54693, None)
+[INFO] 2018-10-12 10:27:37,936 org.apache.spark.storage.BlockManagerMaster logInfo - Registered BlockManager BlockManagerId(driver, 10.20.255.228, 54693, None)
+[INFO] 2018-10-12 10:27:37,937 org.apache.spark.storage.BlockManager logInfo - Initialized BlockManager: BlockManagerId(driver, 10.20.255.228, 54693, None)
+[INFO] 2018-10-12 10:27:38,094 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@7a9c84a5{/metrics/json,null,AVAILABLE,@Spark}
+[WARN] 2018-10-12 10:27:38,110 spark.SparkTesting performPI - Spark logger
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 37;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 75;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 0;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 62;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 87;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 25;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 12;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 50;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 51;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 52;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 53;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 54;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 55;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 56;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 57;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 13;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 14;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 26;
+[WARN] 2018-10-12 10:27:38,684 spark.SparkTesting lambda$0 - 88;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 89;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 90;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 91;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 92;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 93;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 94;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 95;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 96;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 97;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 98;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 99;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 63;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 1;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 76;
+[WARN] 2018-10-12 10:27:38,683 spark.SparkTesting lambda$0 - 38;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 77;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 2;
+[WARN] 2018-10-12 10:27:38,686 spark.SparkTesting lambda$0 - 64;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 27;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 15;
+[WARN] 2018-10-12 10:27:38,685 spark.SparkTesting lambda$0 - 58;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 16;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 28;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 65;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 3;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 78;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 39;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 40;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 79;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 4;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 66;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 67;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 29;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 17;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 18;
+[WARN] 2018-10-12 10:27:38,687 spark.SparkTesting lambda$0 - 59;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 19;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 20;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 30;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 68;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 69;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 70;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 71;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 5;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 80;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 41;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 81;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 6;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 72;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 31;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 21;
+[WARN] 2018-10-12 10:27:38,688 spark.SparkTesting lambda$0 - 60;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 22;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 32;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 73;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 7;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 82;
+[WARN] 2018-10-12 10:27:38,689 spark.SparkTesting lambda$0 - 42;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 83;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 8;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 9;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 10;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 11;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 74;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 33;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 23;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 24;
+[WARN] 2018-10-12 10:27:38,690 spark.SparkTesting lambda$0 - 61;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 34;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 84;
+[WARN] 2018-10-12 10:27:38,691 spark.SparkTesting lambda$0 - 43;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 85;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 35;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 86;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 44;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 36;
+[WARN] 2018-10-12 10:27:38,692 spark.SparkTesting lambda$0 - 45;
+[WARN] 2018-10-12 10:27:38,693 spark.SparkTesting lambda$0 - 46;
+[WARN] 2018-10-12 10:27:38,693 spark.SparkTesting lambda$0 - 47;
+[WARN] 2018-10-12 10:27:38,693 spark.SparkTesting lambda$0 - 48;
+[WARN] 2018-10-12 10:27:38,693 spark.SparkTesting lambda$0 - 49;
+[INFO] 2018-10-12 10:29:18,049 org.apache.spark.SparkContext logInfo - Running Spark version 2.2.1
+[WARN] 2018-10-12 10:29:18,298 org.apache.hadoop.util.NativeCodeLoader <clinit> - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2018-10-12 10:29:18,416 org.apache.spark.SparkContext logInfo - Submitted application: Perform PI
+[INFO] 2018-10-12 10:29:18,431 org.apache.spark.SecurityManager logInfo - Changing view acls to: ada
+[INFO] 2018-10-12 10:29:18,431 org.apache.spark.SecurityManager logInfo - Changing modify acls to: ada
+[INFO] 2018-10-12 10:29:18,432 org.apache.spark.SecurityManager logInfo - Changing view acls groups to: 
+[INFO] 2018-10-12 10:29:18,432 org.apache.spark.SecurityManager logInfo - Changing modify acls groups to: 
+[INFO] 2018-10-12 10:29:18,432 org.apache.spark.SecurityManager logInfo - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ada); groups with view permissions: Set(); users  with modify permissions: Set(ada); groups with modify permissions: Set()
+[INFO] 2018-10-12 10:29:18,676 org.apache.spark.util.Utils logInfo - Successfully started service 'sparkDriver' on port 54773.
+[INFO] 2018-10-12 10:29:18,690 org.apache.spark.SparkEnv logInfo - Registering MapOutputTracker
+[INFO] 2018-10-12 10:29:18,713 org.apache.spark.SparkEnv logInfo - Registering BlockManagerMaster
+[INFO] 2018-10-12 10:29:18,715 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[INFO] 2018-10-12 10:29:18,716 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - BlockManagerMasterEndpoint up
+[INFO] 2018-10-12 10:29:18,748 org.apache.spark.storage.DiskBlockManager logInfo - Created local directory at /private/var/folders/gn/b9p_qmxd18b02fd00dnx9x840000gn/T/blockmgr-e32aca3e-ab81-4752-94e2-13637230630b
+[INFO] 2018-10-12 10:29:18,765 org.apache.spark.storage.memory.MemoryStore logInfo - MemoryStore started with capacity 2004.6 MB
+[INFO] 2018-10-12 10:29:18,810 org.apache.spark.SparkEnv logInfo - Registering OutputCommitCoordinator
+[INFO] 2018-10-12 10:29:18,867 org.spark_project.jetty.util.log initialized - Logging initialized @1396ms
+[INFO] 2018-10-12 10:29:18,913 org.spark_project.jetty.server.Server doStart - jetty-9.3.z-SNAPSHOT
+[INFO] 2018-10-12 10:29:18,925 org.spark_project.jetty.server.Server doStart - Started @1455ms
+[INFO] 2018-10-12 10:29:18,940 org.spark_project.jetty.server.AbstractConnector doStart - Started ServerConnector@1c5199df{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+[INFO] 2018-10-12 10:29:18,941 org.apache.spark.util.Utils logInfo - Successfully started service 'SparkUI' on port 4040.
+[INFO] 2018-10-12 10:29:18,957 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@625e134e{/jobs,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,958 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5f2f577{/jobs/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,958 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5d465e4b{/jobs/job,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,959 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@3d8bbcdc{/jobs/job/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,960 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@117e0fe5{/stages,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,961 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@78aea4b9{/stages/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,961 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@4b85880b{/stages/stage,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,962 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2289aca5{/stages/stage/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,963 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@184497d1{/stages/pool,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,964 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@6ffab045{/stages/pool/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,965 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@3e2943ab{/storage,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,965 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@4a9f80d3{/storage/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,966 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@41fe9859{/storage/rdd,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,966 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@6c67e137{/storage/rdd/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,967 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@191ae03f{/environment,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,968 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@53ab0286{/environment/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,968 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2d10e0b1{/executors,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,969 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@172ca72b{/executors/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,970 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@71e5f61d{/executors/threadDump,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,970 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5e8f9e2d{/executors/threadDump/json,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,975 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@fd46303{/static,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,976 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@5b6813df{/,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,977 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2b58f754{/api,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,978 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2cf23c81{/jobs/job/kill,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,978 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@35fe2125{/stages/stage/kill,null,AVAILABLE,@Spark}
+[INFO] 2018-10-12 10:29:18,980 org.apache.spark.ui.SparkUI logInfo - Bound SparkUI to 0.0.0.0, and started at http://10.20.255.228:4040
+[INFO] 2018-10-12 10:29:19,041 org.apache.spark.executor.Executor logInfo - Starting executor ID driver on host localhost
+[INFO] 2018-10-12 10:29:19,056 org.apache.spark.util.Utils logInfo - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 54774.
+[INFO] 2018-10-12 10:29:19,057 org.apache.spark.network.netty.NettyBlockTransferService logInfo - Server created on 10.20.255.228:54774
+[INFO] 2018-10-12 10:29:19,058 org.apache.spark.storage.BlockManager logInfo - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[INFO] 2018-10-12 10:29:19,059 org.apache.spark.storage.BlockManagerMaster logInfo - Registering BlockManager BlockManagerId(driver, 10.20.255.228, 54774, None)
+[INFO] 2018-10-12 10:29:19,061 org.apache.spark.storage.BlockManagerMasterEndpoint logInfo - Registering block manager 10.20.255.228:54774 with 2004.6 MB RAM, BlockManagerId(driver, 10.20.255.228, 54774, None)
+[INFO] 2018-10-12 10:29:19,063 org.apache.spark.storage.BlockManagerMaster logInfo - Registered BlockManager BlockManagerId(driver, 10.20.255.228, 54774, None)
+[INFO] 2018-10-12 10:29:19,063 org.apache.spark.storage.BlockManager logInfo - Initialized BlockManager: BlockManagerId(driver, 10.20.255.228, 54774, None)
+[INFO] 2018-10-12 10:29:19,179 org.spark_project.jetty.server.handler.ContextHandler doStart - Started o.s.j.s.ServletContextHandler@2d83c5a5{/metrics/json,null,AVAILABLE,@Spark}
+[WARN] 2018-10-12 10:29:19,192 spark.SparkTesting performPI - Spark logger
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 14;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 28;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 57;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 0;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 85;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 42;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 71;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 43;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 86;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 1;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 58;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 29;
+[WARN] 2018-10-12 10:29:19,780 spark.SparkTesting lambda$0 - 15;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 30;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 59;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 2;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 3;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 87;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 44;
+[WARN] 2018-10-12 10:29:19,781 spark.SparkTesting lambda$0 - 72;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 45;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 88;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 4;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 60;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 31;
+[WARN] 2018-10-12 10:29:19,782 spark.SparkTesting lambda$0 - 16;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 32;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 61;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 5;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 89;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 46;
+[WARN] 2018-10-12 10:29:19,783 spark.SparkTesting lambda$0 - 73;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 47;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 90;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 6;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 62;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 33;
+[WARN] 2018-10-12 10:29:19,821 spark.SparkTesting lambda$0 - 17;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 34;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 63;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 7;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 91;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 48;
+[WARN] 2018-10-12 10:29:19,822 spark.SparkTesting lambda$0 - 74;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 49;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 92;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 8;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 64;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 35;
+[WARN] 2018-10-12 10:29:19,823 spark.SparkTesting lambda$0 - 18;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 36;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 65;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 9;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 93;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 50;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 75;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 51;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 94;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 10;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 66;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 37;
+[WARN] 2018-10-12 10:29:19,824 spark.SparkTesting lambda$0 - 19;
+[WARN] 2018-10-12 10:29:19,826 spark.SparkTesting lambda$0 - 38;
+[WARN] 2018-10-12 10:29:19,826 spark.SparkTesting lambda$0 - 67;
+[WARN] 2018-10-12 10:29:19,826 spark.SparkTesting lambda$0 - 11;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 95;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 52;
+[WARN] 2018-10-12 10:29:19,825 spark.SparkTesting lambda$0 - 76;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 53;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 96;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 12;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 68;
+[WARN] 2018-10-12 10:29:19,826 spark.SparkTesting lambda$0 - 39;
+[WARN] 2018-10-12 10:29:19,826 spark.SparkTesting lambda$0 - 20;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 40;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 69;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 13;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 97;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 54;
+[WARN] 2018-10-12 10:29:19,827 spark.SparkTesting lambda$0 - 77;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 55;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 98;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 70;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 41;
+[WARN] 2018-10-12 10:29:19,828 spark.SparkTesting lambda$0 - 21;
+[WARN] 2018-10-12 10:29:19,829 spark.SparkTesting lambda$0 - 99;
+[WARN] 2018-10-12 10:29:19,829 spark.SparkTesting lambda$0 - 56;
+[WARN] 2018-10-12 10:29:19,829 spark.SparkTesting lambda$0 - 78;
+[WARN] 2018-10-12 10:29:19,829 spark.SparkTesting lambda$0 - 22;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 79;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 80;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 81;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 23;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 82;
+[WARN] 2018-10-12 10:29:19,830 spark.SparkTesting lambda$0 - 24;
+[WARN] 2018-10-12 10:29:19,831 spark.SparkTesting lambda$0 - 83;
+[WARN] 2018-10-12 10:29:19,831 spark.SparkTesting lambda$0 - 25;
+[WARN] 2018-10-12 10:29:19,831 spark.SparkTesting lambda$0 - 84;
+[WARN] 2018-10-12 10:29:19,831 spark.SparkTesting lambda$0 - 26;
+[WARN] 2018-10-12 10:29:19,831 spark.SparkTesting lambda$0 - 27;

@@ -1,0 +1,338 @@
+.light-white.lighten-1{
+    background-color: #fff !important;
+}
+
+#logo-container, #logo-container img, #logo-unibs, #logo-unibs img{ 
+    height: 100%;
+}
+
+
+.clear, .clear-10, .clear-15, .clear-20, .clear-30, .clear-50 {
+  clear: both;
+  height: 0; overflow: hidden; /* Précaution pour IE 7 */
+}
+.clear-10 {
+  margin-bottom: 10px;
+}
+.clear-15 {
+  margin-bottom: 15px;
+}
+
+.clear-20 {
+  margin-bottom: 20px;
+}
+.clear-30 {
+  margin-bottom: 30px;
+}
+
+.clear-50 {
+  margin-bottom: 50px
+}
+
+
+.margin_top20{
+    margin-top: 20px;
+}
+.margin_top30{
+    margin-top: 30px;
+}
+.margin_top50{
+    margin-top: 50px;
+}
+
+/*********************************************
+* Bootstrap
+***********************************************/
+.stato {
+    display: none;
+}
+
+.margin_top{
+    margin-top: 20px;
+}
+
+.btn-info:hover {
+  background-color: #2196f3;
+}
+.alert-info {
+  background-color: #31B0D5;
+}
+.navbar-static-top{
+    position: fixed;
+    width: 100%;
+    vertical-align: middle;
+}
+.btn-info{
+      background-color: #31B0D5;
+}
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.btn-info.btn-outline{
+    color: #ffffff;
+}
+.btn-info:hover{
+    background-color: #5bc0de;
+}
+.btn-info:active{
+    background-color: #5bc0de;
+}
+.spacer15{
+    height: 15px;
+    line-height: 15px;
+    width: 100%;
+}
+.padding-bottom50{
+    padding-bottom: 50px;
+}
+
+.margin_top20{
+    margin-top: 20px;
+}
+.margin_top15{
+    margin-top: 15px;
+}
+.margin_top30{
+    margin-top: 30px;
+}
+.margin_top50{
+    margin-top: 50px;
+}
+
+.margin_left10{
+    margin-left: 10px;
+}
+.margin_left30{
+    margin-left: 30px;
+}
+
+.margin_bottom10{
+    margin-bottom: 10px;
+}
+.margin_bottom30{
+    margin-bottom: 30px;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+.font14{
+    font-size: 14px;
+}
+
+.font16{
+    font-size: 16px;
+}
+/*.signatureParent{
+    color:darkblue;
+    background-color:#f5f5f5;
+    padding: 15px;
+    max-size: 824px;
+}
+.signature{
+    padding: 0 0 0 0; 
+    margin: 0 0 0 0;
+    border: 2px dotted #000;
+    width: 100%;
+}
+*/
+body.modal-open {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+
+/* Styles go here */
+/*body {
+  padding-top: 51px;
+}*/
+
+/* this is only to style the sidebar - you can make the sidebar look any way you want */
+.sidebar {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #eee;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-top: 67px;
+    padding-left: 2px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    margin-top: 2px;
+  
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-static-top {
+    position: fixed;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+@media(min-width:1200px) {
+  
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.menuIconContainer{
+    min-height: 64px;
+    display: table;
+    vertical-align: middle;
+}
+
+.nav{
+    background-color: #fff;
+}
+.border_bottom li{
+    border-bottom: 1px solid #e7e7e7;
+}
+.menuIcon{
+    margin-top: 10px;
+    float: left;
+    left: 0px;
+
+}
+
+.imgFirmaContainer{
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.imgFirma{
+    width: 250px;
+    height: auto;
+}
+
+
+.modal-dialog{
+    width: 90%;
+}
+
+.gray_backgorund {
+    background-color: #f5f5f5;
+}
+
+.width20{
+    width: 20px;
+}
+
+.width30{
+    width: 30px;
+}
+.width100{
+    width: 100px;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+input:read-only {
+    background-color: #f5f5f5 !important;
+}
+
+.margin_left20{
+    margin-left: 20px;
+}
+
+.colorBlue{
+    color: #0a6ebd;
+}
+.form-horizontal .text_left {
+    padding-left: 0px;
+    text-align: left;
+}
+.margin_top4 {
+    margin-top: 4px;
+}
+#footer{
+    position: absolute;
+    bottom: 0
+}
+#header{
+    background-color: black;
+    color: white;
+    font-size: large;
+    height: 60px;
+    min-height: 60px;
+}

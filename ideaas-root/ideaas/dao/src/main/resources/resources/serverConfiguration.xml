@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'	xsi:noNamespaceSchemaLocation='validate.xsd'>
+    <BigDataDB>
+        <Server>localhost</Server> <!-- Potrebbe dare problemi su windows pertanto usare 127.0.0.1 -->
+        <Port>27017</Port>
+        <DBName>db_name</DBName>
+        <DBUser>user_name</DBUser>
+        <DBPassword>password</DBPassword>
+    </BigDataDB>
+    <MySQLDB>
+        <ModelDB>
+            <Server>localhost</Server>
+            <Port>3306</Port>
+            <DBName>db_name</DBName>
+            <DBUser>user_name</DBUser>
+            <DBPassword>password</DBPassword>
+        </ModelDB>
+        <MetamodelDB>
+            <Server>localhost</Server>
+            <Port>3306</Port>
+            <DBName>db_name</DBName>
+            <!--  <DBName>bodai_metamodel</DBName>-->
+            <DBUser>user_name</DBUser>
+            <DBPassword>password</DBPassword>
+        </MetamodelDB>
+    </MySQLDB>
+</Config>

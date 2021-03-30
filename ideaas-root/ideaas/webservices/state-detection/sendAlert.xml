@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SendAlertResponse>
+    <FeatureSpace name="Assorbimento energetico" state="error_1">
+        <Feature name="Carico mandrino" state="error" unit="%">
+            <value state="error" timestamp="2019-01-14T16:00:00Z">280.0</value>
+        </Feature>
+        <Feature name="Corrente asse X" state="ok" unit="Amp">
+            <value state="ok" timestamp="2019-01-14T16:00:00Z">4.0</value>
+        </Feature>
+        <Feature name="Corrente asse Y" state="ok" unit="Amp">
+            <value state="ok" timestamp="2019-01-14T16:00:00Z">10.0</value>
+        </Feature>
+        <Feature name="Corrente asse Z" state="ok" unit="Amp">
+            <value state="ok" timestamp="2019-01-14T16:00:00Z">9.0</value>
+        </Feature>
+    </FeatureSpace>
+    <Message>Assorbimento energetico error_1</Message>
+    <MonitoredSystem>
+        <Enterprise state="error_1">Azienda 1</Enterprise>
+        <Component state="error_1">Unit 1.0</Component>
+        <Machine state="error_1">101170</Machine>
+        <Plant state="error_1">Impianto 1</Plant>
+    </MonitoredSystem>
+    <ParameterList>
+        <Parameter name="Part Program">0171507370 GR6112</Parameter>
+        <Parameter name="Mode">1</Parameter>
+        <Parameter name="Tools">4</Parameter>
+    </ParameterList>
+    <Timestamp>2018-01-25T14:44:32Z</Timestamp>
+</SendAlertResponse>

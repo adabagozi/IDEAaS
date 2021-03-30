@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SendAlertResponse>
+<Message>Indurimento asse error_1</Message>
+<Timestamp>2016-08-01T05:09:38.012Z</Timestamp>
+<ParameterList>
+     <Parameter name="Part Program">0171507370 GR6112</Parameter>
+     <Parameter name="Mode">1</Parameter>
+	 <Parameter name="Utensile">3</Parameter>
+</ParameterList>
+<MonitoredSystem>
+	<Enterprise state="error_1">Azienda 1</Enterprise>
+	<Plant state="error_1">Stabilimento 1</Plant>
+	<Machine state="error_1">101143</Machine>
+	<Component state="error_1">Unit 1.0</Component>
+</MonitoredSystem>
+<FeatureSpaceList>
+    <FeatureSpace name="Indurimento asse">
+        <Feature name="Carico mandrino" unit="amp">
+            <Value timestamp="2016-08-01T05:38Z" state="ok">20,456</Value>
+            <Value timestamp="2016-08-01T05:39Z" state="warning">50,156</Value>
+            <Value timestamp="2016-08-01T05:40Z" state="error">99,154</Value>
+        </Feature>
+        <Feature name="Velocita mandrino" unit="rpm">
+            <Value timestamp="2016-08-01T05:38Z" state="ok">245</Value>
+            <Value timestamp="2016-08-01T05:39Z" state="warning">67</Value>
+            <Value timestamp="2016-08-01T05:40Z" state="ok">340</Value>
+        </Feature>
+    </FeatureSpace>
+</FeatureSpaceList>
+</SendAlertResponse>
+

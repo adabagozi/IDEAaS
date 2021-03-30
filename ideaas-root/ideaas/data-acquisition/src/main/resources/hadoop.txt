@@ -1,0 +1,45 @@
+ssh localhost
+//START HADOOP (Nello cartella hadoop )
+hadoop-2.8.1/bin/hdfs namenode -format
+hadoop-2.8.1/sbin/start-dfs.sh
+
+http://localhost:50070/
+
+//creazione cartella user/ada e input ed output
+hadoop-2.8.1/bin/hdfs dfs -mkdir /user
+hadoop-2.8.1/bin/hdfs dfs -mkdir /user/ada
+
+hadoop-2.8.1/bin/hdfs dfs -mkdir input
+hadoop-2.8.1/bin/hdfs dfs -mkdir output
+
+
+//ESEMPIO 
+- Creazione file WordCount.java (esempio recuperabile online)
+
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=${JAVA_HOME}/bin:${PATH}
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+
+//Generare il file jar di WordCount
+hadoop com.sun.tools.javac.Main WordCount.java
+jar cf wc.jar WordCount*.class
+
+
+//Creazione cartella exapmples contenente il file di esempio divina_commedia.txt
+//copia dei file di test nella cartella input di hadoop (/user/ada/input)
+hadoop-2.8.1/bin/hdfs dfs -put examples/divina_commedia.txt input
+
+//Esecuzione WordCount sul file di input divina_commedia.txt
+hadoop-2.8.1/bin/hadoop jar wc.jar WordCount input/divina_commedia.txt output/divina_commedia
+
+
+//Lista file nel file system di hadoop
+hadoop fs -ls /user/ada/output/divina_commedia/
+
+//Visualizza output file su terminale
+hadoop fs -cat /user/ada/output/divina_commedia/part-r-00000
+
+
+//Stop hadoop
+ hadoop-2.8.1/sbin/stop-dfs.sh

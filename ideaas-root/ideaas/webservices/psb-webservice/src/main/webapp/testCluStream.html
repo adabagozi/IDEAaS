@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Genera clustering</title>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.sandstone.min.css"> -->
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap.cerulean.min.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+<script src="js/jquery.min.js"></script>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Menu</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt=""
+					src="./img/logo.png"></a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-2"></div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="page-header" id="banner">
+			<div class="row margin_bottom30">
+				<div class="row col-xs-12 text-center margin_bottom30">
+					<h1>CluStream Testing Data</h1>
+				</div>
+
+			</div>
+		</div>
+		<div class="row margin_bottom30">
+			<a class="col-xs-12 btn btn-outline btn-info pull-right margin-left30 generateClusters" href="./requests/service/getSummarisedData" id="runCluStreamTest">Start Test</a>
+		</div>
+
+		<div class="row margin_top20 margin_bottom20 text-center" id="loader">
+			<img alt="" src="./img/spinner.gif" width="150px">
+		</div>
+		<div class="row margin_top50 margin_bottom30" id="resultData"></div>
+
+	</div>
+
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/highcharts_exporting.js"></script>
+	<script src="js/cluStreamTest.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.resultData').hide();
+			$('#loader').hide();
+			
+			$("#runCluStreamTest").click(function(){
+				runCluStreamTest("./requests/service/cluStreamTesting");
+			});
+
+		});
+
+		function runCluStreamTest(url) {
+			console.log("runCluStreamTest");
+			$('#resultData').html("");
+			$('#loader').show();
+			
+			//$('#resultData').append("<div class='row col-xs-12 margin_bottom20'>"+outputTest+"</div>");
+		 //	var result = JSON.parse(outputTest);
+		//	readDataResult(result["result"]);
+			callAjax(url);
+
+		}
+
+		function callAjax(url) {
+			$.ajax({
+				type : "POST",
+				url : url,
+				data : {},
+				async : true
+			}).done(function(data) {
+				result = JSON.parse(data);
+				//$('#resultData').append("<div class='row col-xs-12 margin_bottom20'>"+data+"</div>");
+				readDataResult(result["result"]);
+			});
+		}
+
+	</script>
+</body>
+</html>

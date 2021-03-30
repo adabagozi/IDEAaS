@@ -1,0 +1,20 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:dateTime" name="StartDate"/>
+        <xs:element type="xs:dateTime" name="EndDate"/>
+        <xs:element name="MonitoredSystem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Enterprise"/>
+              <xs:element type="xs:string" name="Plant"/>
+              <xs:element type="xs:string" name="Machine"/>
+              <xs:element type="xs:string" name="Component"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Genera clustering</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.cerulean.min.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Menu</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt="" src="./img/logo.png"></a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-2"></div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="page-header" id="banner">
+			<div class="row margin_bottom30">
+				<div class="row col-xs-12 text-center margin_bottom30">
+					<h1>State Detection Demo</h1>
+				</div>
+
+			</div>
+		</div>
+		<div class="row margin_bottom30">
+			<div class="col-xs-12">
+				<h2>Get Alert Status</h2>
+				<a href="./requests/service/getAlertStatus"
+					class="btn btn-outline btn-info" id="getData">Get Alert Status</a>
+			</div>
+		</div>
+		<hr>
+		<div class="row margin_bottom30">
+			<h2>Get Data </h2>
+			<p>Selezionare il file di input per Get Data in formato xml</p>
+			<div class="col-xs-12">
+				<form enctype="application/xml" action="./requests/service/getData" method="POST">
+					<div class="form-group">
+						<label for="filter">Inserire il file di input</label> <input
+							type="file" class="form-control-file"
+							id="getDataInput" name = "filter">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Invia</button>
+				</form>
+			</div>
+
+		</div>
+		<hr>
+		<div class="row margin_bottom30">
+			<div class="col-xs-12">
+				<h2>Send Alert Service</h2>
+				<div class="col-xs-12">
+					<div class="col col-xs-4 margin_top50">
+						<label for="interval_type" class="">Interval type*</label>
+						 <select id="interval_type" name="interval_type">
+		  					<option value="minutes">Minute</option>
+		  					<option value="hours">Hour</option>
+		  					<option value="days">Day</option>
+		  					<option value="months">Month</option>
+		  					<option value="years">Year</option>
+						</select>
+					</div>
+					<div class="col col-xs-4 margin_top50">
+						<label for="interval_length" class="">Interval length*</label>
+						<input type="text" class="form-control" id="interval_length" name="interval_length">
+					</div>
+					<div class="col col-xs-4 margin_top50">
+						<label for="end_date" class="">Final Date*</label> <br>
+						<!-- <input type="date" id="end_date" name="end_date" class="datepicker">
+						<hr> -->
+						<div id="start_date" class="form-group">
+							<div class='input-group date' id='datetimepicker1'>
+								<!-- data-format="dd/MM/yyyy HH:mm:ss"  -->
+								<input type='text' class="form-control" />
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<a class="col-xs-12 btn btn-outline btn-info margin_top50" id="checkSendAlert" onclick="getDate()">Start sendAlert</a>
+				<div class="row margin_top20 margin_bottom20 text-center"
+					id="loader">
+					<img alt="" src="./img/spinner.gif" width="150px">
+				</div>
+				<div class="row margin_top50 margin_bottom30" id="resultData"></div> 
+			</div>
+		</div> 
+		<hr>
+
+	</div>
+	</div>
+
+	<script>
+	
+	$(function () {
+		$('#datetimepicker1').datetimepicker({format: 'DD/MM/YYYY HH:mm'});
+	});
+
+		function getDate(){
+			var e = document.getElementById("interval_type");
+			var interval_type = e.options[e.selectedIndex].text;
+			
+			var interval_type = $('#interval_type').val();
+			var interval_length = $('#interval_length').val();
+			var end_date = $("#datetimepicker1").find("input").val();
+			var url = "./requests/service/sendAlert";
+			
+			callAjax(url, interval_type, interval_length, end_date);
+			
+			/**
+			while (date < endDate) {
+				
+				console.log("DATE: " +  date.toString("dd/MM/yyyy hh:mm:ss"));
+				date = date.add(1).minutes();
+				
+				callAjax("./requests/service/sendAlert", date.toString("dd/MM/yyyy hh:mm:ss"));
+				if(date.getMinutes() == 00){
+					console.log("Waiting" ); //TODO waiting
+				}
+			}
+			*/
+			
+		}
+		
+		function callAjax(url, interval_type, interval_length, end_date) {
+			console.log(interval_type + " - " + interval_length + " - " + end_date);
+			$.ajax({
+				type : "POST",
+				url : url,
+				data: {
+					interval_type: interval_type,
+					interval_length: interval_length,
+					end_date: end_date
+				},
+				//async : true,
+//				success : function(){
+//					window.open("http://localhost:8080/state-detection/requests/service/newwindow", "hello");
+//					console.log("success done");
+//				}
+			})
+			//.done(function(data) {
+			//	result = JSON.parse(data);
+			//	console.log(data);
+			//});
+			
+		}
+		
+	</script>
+	
+</body>
+</html>
+

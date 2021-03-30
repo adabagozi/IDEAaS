@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetData>
+  <StartDate>2016-08-01T10:10:00Z</StartDate>
+  <EndDate>2016-08-01T11:20:00Z</EndDate>
+  <MonitoredSystem>
+    <Enterprise>Azienda1</Enterprise>
+    <Plant>Stabilimento1</Plant>
+    <Machine>101143</Machine>
+    <Component>Unit1.0</Component>
+  </MonitoredSystem>
+</GetData>

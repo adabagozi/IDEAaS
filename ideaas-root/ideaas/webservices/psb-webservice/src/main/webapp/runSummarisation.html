@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Genera clustering</title>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.sandstone.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.cerulean.min.css">
+		<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+		
+		<script src="js/jquery.min.js"></script>
+
+
+</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="./index.html">Visualizza cluster <span class="sr-only">(current)</span></a></li>
+						<!--<li class="active"><a href="#">Visualizza Cluster <span class="sr-only">(current)</span></a></li>#}
+						{#<li><a href="#">Link</a></li>#}-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Visualizza dati <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="./readDataPointsGenerated.html">Dati generati random</a></li>
+								<li class="divider"></li>
+								<li><a href="./readMeasures.html">Dati reali</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!--<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+						<input class="form-control" placeholder="Search" type="text">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>-->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="./runSummarisation.html">Generete new clusters</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container">
+
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Genera Clustering</h1>
+						<p class="lead">Selezionare le modalità di generazione dei set di cluster.<br></p>
+						<!--<p>
+							mode = 1 <br>
+							idMachine = 101143 <br>
+							idSpindle = Unit 1.0 <br>
+							idPartProgram = 0171507370 GR6112 <br>
+							featureSpaceID = Corrente - Velocit&agrave; asse Z <br>-->
+						</p>
+					</div>
+					
+				</div>
+				<div class="row">
+					<form role="form" class="col-xs-12">
+					
+						<div class="row">
+							<div class="col-sm-12 col-xs-12">
+								<div class="form-group">
+									<label>Selezionare tipo di cluster da generare</label>
+									<select name="select_cluster_type" id="select_cluster_type" class="form-control">
+										<option value="0">Dati Random</option>
+										<option value="1">Dati Gaussiani</option>
+										<option value="2">Dati Reali</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group realData">
+									<label>Selezionare Feature Space</label>
+									<select name="select_feature_space" id="select_feature_space" class="form-control">
+										<option value="1">X - Y</option>
+										<option value="4">Corrente - Velocit&agrave; asse Z</option>
+									</select>
+								</div>
+								<div class="form-group realData">
+									<label>Selezionare Macchina</label>
+									<select name="select_macchina" id="select_macchina" class="form-control" readonly>
+										<option select value="101143">101143</option>
+									</select>
+								</div>
+								<div class="form-group realData">
+									<label>Selezionare Componente</label>
+									<select name="select_componente" id="select_componente" class="form-control" readonly>
+										<option select value="Unit 1.0">Unit 1.0</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Selezionare Numero Esperimento</label>
+									<select name="select_experiment_number" id="select_experiment_number" class="form-control">
+										<!--<option value="0">G0</option>-->
+									
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+							
+								<div class="form-group realData">
+									<label>Selezionare Part Program</label>
+									<select name="select_part_program" id="select_part_program" class="form-control" readonly>
+										<option select value="0171507370 GR6112">0171507370 GR6112</option>
+									</select>
+								</div>
+								
+								<div class="form-group realData">
+									<label>Selezionare Mode</label>
+									<select name="select_mode" id="select_mode" class="form-control" readonly>
+										<option select value="1">G1</option>
+									</select>
+								</div>
+
+								<div class="form-group realData">
+									<label>Selezionare Interval Type</label>
+									<select name="select_interval_type" id="select_interval_type" class="form-control" readonly>
+										
+										<option select value="hours">Ore</option>
+										<option value="minutes">Minuti</option>
+										<option value="days">Giorni</option>
+									</select>
+								</div>
+								<div class="form-group realData">
+									<label>Selezionare Interval Value</label>
+									<select name="select_interval_value" id="select_interval_value" class="form-control" readonly>
+										<option select value="1">1</option>
+										<option value="30">30</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row margin_top30">
+							<div class="col-xs-6 loader" id="loaderRequest" hidden></div>
+						</div>
+						<div class="row margin_bottom30 realData">
+							<a class="btn btn-outline btn-primary pull-right margin-left30 generateClusters" onclick="generateSynthesisStable('./requests/service/generateStableSynthesis', false);">Genera Cluster - Dati reali</a>
+							<!--<a class="btn btn-info pull-right margin-left30 generateClusters" onclick="generateSynthesis('./requests/service/generateSynthesis');">Genera Cluster - Dati reali</a>-->
+						
+						</div>
+						<div class="row margin_bottom30 random">
+							<a class="btn btn-outline btn-info pull-right margin-left30 generateClusters" onclick="generateSynthesisStable('./requests/service/generateStableSynthesisTest', true);">Genera Cluster - Dati random</a>
+							
+							<!--<a class="btn btn-outline btn-warning pull-right margin-left30 generateClusters" onclick="generateSynthesis('./requests/service/generateSynthesisTest');">Genera Cluster - Dati random</a>-->
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			<div id="resultData">
+
+			</div>
+
+		</div>
+		
+	
+		<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.realData').hide();
+			$('#loaderRequest').hide();
+		
+		});
+		$("#select_cluster_type").change(function() {
+			if($( "#select_cluster_type").val() == 0 || $( "#select_cluster_type").val() == 1){
+				$('.realData').hide();
+				$('.random').show();
+			}else {
+				$('.realData').show();
+				$('.random').hide();
+			}
+		});
+
+		function generateSynthesisStable(url, isTest){
+
+			$('.generateClusters').hide();
+
+			var dateValues = [	"2016-08-01T05:00:00.000Z" ];
+			for (let datetime of dateValues) {
+				console.log("Requerst datetime: "+datetime);
+				callAjax(url, datetime, 0, true);
+
+				var urlClusters = "./requests/service/generateSynthesis";
+				if(isTest){
+					urlClusters = "./requests/service/generateSynthesisTest";
+				}
+				generateSynthesis(urlClusters);
+			}
+		}
+
+		function generateSynthesis(url){
+
+			//$('.generateClusters').hide();
+			 	// var dateValues = [	"2016-08-01T05:30:00.000Z",
+			 	// 					"2016-08-01T06:00:00.000Z",
+			 	// 					"2016-08-01T06:30:00.000Z",
+			 	// 					"2016-08-01T07:00:00.000Z",
+			 	// 					"2016-08-01T07:30:00.000Z",
+			 	// 					"2016-08-01T08:00:00.000Z",
+			 	// 					"2016-08-01T08:30:00.000Z",
+			 	// 					"2016-08-01T09:00:00.000Z",
+			 	// 					"2016-08-01T09:30:00.000Z",
+			 	// 					"2016-08-01T10:00:00.000Z",
+			 	// 					"2016-08-01T10:30:00.000Z",
+			 	// 					"2016-08-01T11:00:00.000Z",
+			 	// 					"2016-08-01T11:30:00.000Z",
+			 	// 					"2016-08-01T12:00:00.000Z",
+			 	// 					"2016-08-01T12:30:00.000Z",
+			 	// 					"2016-08-01T13:00:00.000Z",
+			 	// 					"2016-08-01T13:30:00.000Z",
+			 	// 					"2016-08-01T14:00:00.000Z",
+			 	// 					"2016-08-01T14:30:00.000Z",
+			 	// 					"2016-08-01T15:00:00.000Z",
+			 	// 					"2016-08-01T15:30:00.000Z"
+			 	// 				];
+				var dateValues = [	"2016-08-01T06:00:00.000Z",
+									"2016-08-01T07:00:00.000Z",
+									"2016-08-01T08:00:00.000Z",
+									"2016-08-01T09:00:00.000Z",
+									"2016-08-01T10:00:00.000Z",
+									"2016-08-01T11:00:00.000Z",
+									"2016-08-01T12:00:00.000Z",
+									"2016-08-01T13:00:00.000Z",
+									"2016-08-01T14:00:00.000Z",
+									"2016-08-01T15:00:00.000Z"
+								];
+
+				/*
+				case 0:
+					change_dim_value = 600; // 2/4 piccoli, 2/4 grandi 
+					break;
+				case 1:
+					change_dim_value = 0; // 0 piccoli, 4/4 grandi 
+					break;
+				case 2:
+					change_dim_value = 1200; // 4/4 piccoli, 0 grandi 
+					break;
+				case 3:
+					change_dim_value = 300; // 1/4 piccoli, 3/4 grandi 
+					break;
+				case 4:
+					change_dim_value = 900; // 3/4 piccoli, 1/4 grandi 
+					break;
+					*/
+				var cond = [1, 2, 1, 1, 0];
+				var i = 0;
+				for (let datetime of dateValues) {
+					console.log("Requerst datetime: "+datetime);
+					
+					callAjax(url, datetime, cond[i], false);
+					i++;					
+					if(i==5){
+						i=0;
+					}
+				}
+				$('.generateClusters').show();
+			}
+			
+		function callAjax(url, datetime, typeDataGenerated, isStable){
+			$('#loaderRequest').show();
+			var featureSpace = $("#select_feature_space").val();
+			var part_program = $("#select_part_program").val();
+			var mode = $("#select_mode").val();
+			var macchina = $("#select_macchina").val();
+			var componente = $("#select_componente").val();
+			var intervalType = $("#select_interval_type").val();
+			var intervalValue = $("#select_interval_value").val();
+			var experimentNumber = $("#select_experiment_number").val();
+			var isGaussian = false;
+			if($("#select_cluster_type").val() == 1){
+				isGaussian=true;
+			}
+			$.ajax({
+					type:"POST",
+					url: url,
+					data: {
+						select_features: 		featureSpace,
+						select_utensile: 		"0",
+						select_part_program: 	part_program, 
+						select_mode: 			mode,
+						select_macchina: 		macchina,
+						select_componente: 		componente,
+						intervalType: 			intervalType,
+						intervalValue:			intervalValue,
+						experimentNumber:		experimentNumber, 
+						condition: 				typeDataGenerated, 
+						isGaussian: 			isGaussian,
+						datetime: 				datetime
+					},
+					async: false
+				}).done(function(data){
+					$('#loaderRequest').hide();
+					if(isStable){
+						$('#resultData').append("<p><strong>STABILE</strong></p>");
+					}	
+					$('#resultData').append("<p>Cluster "+ datetime +" generati.</p>");
+					if(isStable){
+						$('#resultData').append("<br><br>");
+					}	
+				});
+			}
+		</script>
+	</body>
+</html>

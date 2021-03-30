@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetAlertStatusResponse>
+  <Message>Stato del sistema 2016-08-01 05:09:38.012</Message>
+  <Timestamp>2016-08-01T05:09:38.012Z</Timestamp> 
+  <AlertStatusList>
+	  <AlertStatus>
+		<MonitoredSystem>
+		  <Enterprise state="error_1">Azienda1</Enterprise>
+		  <Plant state ="error_1">Stabilimento1</Plant>
+		  <Machine state ="error_1">101143</Machine>
+		  <Component state ="error_1">Unit1.0</Component>
+		</MonitoredSystem>
+		<FeatureSpaceList>
+			<FeatureSpace name="Indurimento asse" state="error_1">
+			  <Feature name="Carico mandrino" unit="amp" state="error">
+			  	<Value timestamp="2016-08-01T09:35Z" state="error">20,456</Value>
+			  </Feature>
+			  <Feature name="Velocita mandrino" unit="rpm" state="ok">
+			  	<Value timestamp="2016-08-01T09:37Z" state="ok">245</Value>
+			  </Feature>
+			</FeatureSpace>
+		</FeatureSpaceList>
+	  </AlertStatus>
+  </AlertStatusList>
+</GetAlertStatusResponse>

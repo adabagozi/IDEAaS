@@ -1,0 +1,106 @@
+{
+	"synthesis": [
+		{
+			"getSS_synthesi": "2.163546062E7",
+			"synthesi_element": [
+				{
+					"ss": "660.6199999999985",
+					"ID_feature": "5",
+					"feature_name": "Corrente Asse Z",
+					"ls": "-44.399999999999984",
+					"center": "-0.09347368421052628"
+				},
+				{
+					"ss": "2.16348E7",
+					"ID_feature": "8",
+					"feature_name": "Velocita Asse Z",
+					"ls": "-63140.0",
+					"center": "-132.92631578947368"
+				}
+			],
+			"num_data": "475",
+			"warning": "0",
+			"radius": "166.96982955215563"
+		},
+		{
+			"getSS_synthesi": "2.23075649029E9",
+			"synthesi_element": [
+				{
+					"ss": "490.29",
+					"ID_feature": "5",
+					"feature_name": "Corrente Asse Z",
+					"ls": "30.9",
+					"center": "3.433333333333333"
+				},
+				{
+					"ss": "2.230756E9",
+					"ID_feature": "8",
+					"feature_name": "Velocita Asse Z",
+					"ls": "141680.0",
+					"center": "15742.222222222223"
+				}
+			],
+			"num_data": "9",
+			"warning": "1",
+			"radius": "210.3805429204528"
+		}
+	],
+	"number_new_data": "506",
+	"id_previous": "",
+	"interval_value": "30",
+	"total_synthesis": "15",
+	"synthesis_discarted": "13",
+	"old_synthesis": "0",
+	"number_data": "506",
+	"feature_space_id": "4",
+	"timestamp_final": "Thu Jun 01 11:53:11 CEST 2017",
+	"timestamp_initial": "Mon Aug 01 07:00:00 CEST 2016",
+	"id_stable": "",
+	"parameters": [],
+	"clusters": [],
+	"interval_type": "minutes",
+	"dimensions": [
+		{
+			"instances": [
+				{
+					"instance": "101143"
+				}
+			],
+			"ID_dimension": "2"
+		},
+		{
+			"instances": [
+				{
+					"instance": "Unit 1.0"
+				}
+			],
+			"ID_dimension": "3"
+		},
+		{
+			"instances": [
+				{
+					"instance": "0"
+				}
+			],
+			"ID_dimension": "10"
+		},
+		{
+			"instances": [
+				{
+					"instance": "0171507370 GR6112"
+				}
+			],
+			"ID_dimension": "11"
+		},
+		{
+			"instances": [
+				{
+					"instance": "1"
+				}
+			],
+			"ID_dimension": "12"
+		}
+	],
+	"timestamp": "Thu Jun 01 11:53:11 CEST 2017",
+	"isStable": "true"
+}

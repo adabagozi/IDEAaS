@@ -1,0 +1,562 @@
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - environment->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@4a067c25,[o.s.j.s.ServletContextHandler@5ddabb18{/environment,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - executors->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@372ea2bc,[o.s.j.s.ServletContextHandler@64df9a61{/executors,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/kill->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@782a4fff,[o.s.j.s.ServletContextHandler@3a94964{/jobs/job/kill,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - metrics/json->[{o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,null,@Spark},[o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - executors/threadDump->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@21526f6c,[o.s.j.s.ServletContextHandler@2cac4385{/executors/threadDump,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@2c42b421
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-51e37590 from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-51e37590@d1dfc36b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-51e37590=org.apache.spark.ui.JettyUtils$$anon$3-51e37590@d1dfc36b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@2c42b421
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1954ms org.spark_project.jetty.servlet.ServletHandler@2c42b421
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-51e37590@d1dfc36b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1955ms org.apache.spark.ui.JettyUtils$$anon$3-51e37590@d1dfc36b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@4c060c8f for org.apache.spark.ui.JettyUtils$$anon$3-51e37590
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1955ms o.s.j.s.ServletContextHandler@2e647e59{/metrics/json,null,AVAILABLE,@Spark}
+DEBUG main org.apache.spark.SparkContext - Adding shutdown hook
+INFO main org.apache.spark.SparkContext - Running Spark version 2.3.1
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)], valueName=Time)
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)], valueName=Time)
+DEBUG main org.apache.hadoop.metrics2.lib.MutableMetricsFactory - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(about=, sampleName=Ops, always=false, type=DEFAULT, value=[GetGroups], valueName=Time)
+DEBUG main org.apache.hadoop.metrics2.impl.MetricsSystemImpl - UgiMetrics, User and group related metrics
+DEBUG main org.apache.hadoop.security.authentication.util.KerberosName - Kerberos krb5 configuration not found, setting default realm to empty
+DEBUG main org.apache.hadoop.security.Groups -  Creating new Groups object
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+DEBUG main org.apache.hadoop.util.NativeCodeLoader - java.library.path=/Users/ada/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+WARN main org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+DEBUG main org.apache.hadoop.util.PerformanceAdvisory - Falling back to shell based
+DEBUG main org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+DEBUG main org.apache.hadoop.util.Shell - Failed to detect a valid hadoop home directory
+java.io.IOException: HADOOP_HOME or hadoop.home.dir are not set.
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:325)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:350)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.security.Groups.parseStaticMapping(Groups.java:116)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:93)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:73)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:293)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:283)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:260)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:789)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:774)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:647)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2467)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2467)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2467)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:292)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at testing_parallelization.DataSummarisationTestingParallelization.testSark(DataSummarisationTestingParallelization.java:224)
+	at testing_parallelization.DataSummarisationTestingParallelization.main(DataSummarisationTestingParallelization.java:63)
+DEBUG main org.apache.hadoop.util.Shell - setsid is not available on this machine. So not using it.
+DEBUG main org.apache.hadoop.util.Shell - setsid exited with exit code 0
+DEBUG main org.apache.hadoop.security.Groups - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login
+DEBUG main org.apache.hadoop.security.UserGroupInformation - hadoop login commit
+DEBUG main org.apache.hadoop.security.UserGroupInformation - using local user:UnixPrincipal: ada
+DEBUG main org.apache.hadoop.security.UserGroupInformation - Using user: "UnixPrincipal: ada" with name ada
+DEBUG main org.apache.hadoop.security.UserGroupInformation - User entry: "ada"
+DEBUG main org.apache.hadoop.security.UserGroupInformation - UGI loginUser:ada (auth:SIMPLE)
+INFO main org.apache.spark.SparkContext - Submitted application: IDEAaS
+INFO main org.apache.spark.SecurityManager - Changing view acls to: ada
+INFO main org.apache.spark.SecurityManager - Changing modify acls to: ada
+INFO main org.apache.spark.SecurityManager - Changing view acls groups to: 
+INFO main org.apache.spark.SecurityManager - Changing modify acls groups to: 
+INFO main org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ada); groups with view permissions: Set(); users  with modify permissions: Set(ada); groups with modify permissions: Set()
+DEBUG main org.apache.spark.SecurityManager - Created SSL options for fs: SSLOptions{enabled=false, port=None, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+DEBUG main io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG main io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG main io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+DEBUG main io.netty.util.internal.PlatformDependent - Platform: MacOS
+DEBUG main io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+DEBUG main io.netty.util.internal.PlatformDependent0 - Java version: 8
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+DEBUG main io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+DEBUG main io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+DEBUG main io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/gn/b9p_qmxd18b02fd00dnx9x840000gn/T (java.io.tmpdir)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3817865216 bytes
+DEBUG main io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG main io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+DEBUG main io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG main io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+DEBUG main io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG main io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.processId: 45461 (auto-detected)
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+DEBUG main io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+DEBUG main io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1)
+DEBUG main io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+DEBUG main io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 18:65:90:ff:fe:e0:99:dd (auto-detected)
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+DEBUG main io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG main org.apache.spark.network.server.TransportServer - Shuffle server started on port: 64301
+INFO main org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 64301.
+DEBUG main org.apache.spark.SparkEnv - Using serializer: class org.apache.spark.serializer.JavaSerializer
+INFO main org.apache.spark.SparkEnv - Registering MapOutputTracker
+DEBUG main org.apache.spark.MapOutputTrackerMasterEndpoint - init
+INFO main org.apache.spark.SparkEnv - Registering BlockManagerMaster
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+INFO main org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+INFO main org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/gn/b9p_qmxd18b02fd00dnx9x840000gn/T/blockmgr-46d2c99a-0fba-46ef-bb40-c155ec91a7ac
+DEBUG main org.apache.spark.storage.DiskBlockManager - Adding shutdown hook
+DEBUG main org.apache.spark.util.ShutdownHookManager - Adding shutdown hook
+INFO main org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 2004.6 MB
+INFO main org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+DEBUG main org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - init
+DEBUG main org.apache.spark.SecurityManager - Created SSL options for ui: SSLOptions{enabled=false, port=None, keyStore=None, keyStorePassword=None, trustStore=None, trustStorePassword=None, protocol=None, enabledAlgorithms=Set()}
+DEBUG main org.spark_project.jetty.util.log - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.spark_project.jetty.util.log) via org.spark_project.jetty.util.log.Slf4jLog
+INFO main org.spark_project.jetty.util.log - Logging initialized @1507ms
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@73db4768
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@3829ac1{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@4baf352a,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@4baf352a added {org.apache.spark.ui.JettyUtils$$anon$3-47404bea@539b8e75==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@4baf352a added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-47404bea,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@5ed731d0
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@3234f74e{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@7bc10d84,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@7bc10d84 added {org.apache.spark.ui.JettyUtils$$anon$3-275fe372@889c928b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@7bc10d84 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-275fe372,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@33e01298
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@31e75d13{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@a5b0b86,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@a5b0b86 added {org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a@37603539==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@a5b0b86 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@78fb9a67
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@73ff4fae{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@21aa6d6c,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@21aa6d6c added {org.apache.spark.ui.JettyUtils$$anon$3-b968a76@7f592bdb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@21aa6d6c added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-b968a76,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@458342d3
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@15c25153{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@1252b961,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1252b961 added {org.apache.spark.ui.JettyUtils$$anon$3-9ed238c@5413bc58==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1252b961 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-9ed238c,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@56276db8
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@51e8e6e6{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@56f6d40b,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@56f6d40b added {org.apache.spark.ui.JettyUtils$$anon$3-36676c1a@baa1624d==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@56f6d40b added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-36676c1a,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@4d098f9b
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@2dbf4cbd{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@20b5f2ac,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@20b5f2ac added {org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec@91f020ba==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@20b5f2ac added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@7e3060d8
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@293d0107{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@2692b61e,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2692b61e added {org.apache.spark.ui.JettyUtils$$anon$3-7b64240d@718b7c6b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2692b61e added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-7b64240d,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@47dbb1e2
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@74cadd41{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@2e54db99,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2e54db99 added {org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f@a5d4bb11==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2e54db99 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@4f2613d1
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@6d24ffa1{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@65a4798f,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@65a4798f added {org.apache.spark.ui.JettyUtils$$anon$3-773f7880@8c83eb78==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@65a4798f added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-773f7880,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@5b080f3a
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@773cbf4f{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@6b54655f,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@6b54655f added {org.apache.spark.ui.JettyUtils$$anon$3-665e9289@f318ef56==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@6b54655f added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-665e9289,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@7d3430a7
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@6f603e89{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@2756c0a7,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2756c0a7 added {org.apache.spark.ui.JettyUtils$$anon$3-350ec41e@7e1a10c8==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2756c0a7 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-350ec41e,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@71984c3
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@165b2f7f{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@5536379e,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@5536379e added {org.apache.spark.ui.JettyUtils$$anon$3-277f7dd3@8bf2181c==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@5536379e added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-277f7dd3,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@6c8bca63
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@2364305a{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@470a696f,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@470a696f added {org.apache.spark.ui.JettyUtils$$anon$3-1bc715b8@4f385eeb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@470a696f added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-1bc715b8,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@1c55f277
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@5ddabb18{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@3e8f7922,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@3e8f7922 added {org.apache.spark.ui.JettyUtils$$anon$3-63192798@4b23b535==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@3e8f7922 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-63192798,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@50eca7c6
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@58e6d4b8{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@1de5f0ef,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1de5f0ef added {org.apache.spark.ui.JettyUtils$$anon$3-376a312c@f1d5600a==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1de5f0ef added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-376a312c,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@3ce3db41
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@64df9a61{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@77602954,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@77602954 added {org.apache.spark.ui.JettyUtils$$anon$3-e260766@1215b084==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@77602954 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-e260766,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@2c3dec30
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@34a97744{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@4275c20c,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@4275c20c added {org.apache.spark.ui.JettyUtils$$anon$3-7c56e013@a4f02de6==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@4275c20c added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-7c56e013,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@40258c2f
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@2cac4385{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@6731787b,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@6731787b added {org.apache.spark.ui.JettyUtils$$anon$3-16f7b4af@3cdafc19==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@6731787b added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-16f7b4af,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@7adf16aa
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@34a1d21f{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@58bf8650,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@58bf8650 added {org.apache.spark.ui.JettyUtils$$anon$3-73c60324@82bf200==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@58bf8650 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$3-73c60324,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@4ba534b0
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@6f0ca692{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@2c104774,MANAGED}
+DEBUG main org.spark_project.jetty.http.PreEncodedHttpField - HttpField encoders loaded: []
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2c104774 added {org.spark_project.jetty.servlet.DefaultServlet-6e4de19b@43097323==org.spark_project.jetty.servlet.DefaultServlet,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@2c104774 added {[/]=>org.spark_project.jetty.servlet.DefaultServlet-6e4de19b,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@18518ccf
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@1991f767{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@768ccdc5,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@768ccdc5 added {org.apache.spark.ui.JettyUtils$$anon$4-4c6daf0@d9fe8543==org.apache.spark.ui.JettyUtils$$anon$4,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@768ccdc5 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$4-4c6daf0,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@162be91c
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@2488b073{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@1c9f0a20,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1c9f0a20 added {org.glassfish.jersey.servlet.ServletContainer-72a85671@2806e4db==org.glassfish.jersey.servlet.ServletContainer,jsp=null,order=-1,inst=false,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@1c9f0a20 added {[/*]=>org.glassfish.jersey.servlet.ServletContainer-72a85671,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@b40bb6e
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@3a94964{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@5049d8b2,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@5049d8b2 added {org.apache.spark.ui.JettyUtils$$anon$4-6d0b5baf@600d6c5d==org.apache.spark.ui.JettyUtils$$anon$4,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@5049d8b2 added {[/]=>org.apache.spark.ui.JettyUtils$$anon$4-6d0b5baf,POJO}
+DEBUG main org.spark_project.jetty.util.DecoratedObjectFactory - Adding Decorator: org.spark_project.jetty.util.DeprecationWarning@34a75079
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - o.s.j.s.ServletContextHandler@346a361{/,null,null} added {org.spark_project.jetty.servlet.ServletHandler@107ed6fc,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@107ed6fc added {org.apache.spark.ui.JettyUtils$$anon$4-1643d68f@db9aab6f==org.apache.spark.ui.JettyUtils$$anon$4,jsp=null,order=-1,inst=true,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.servlet.ServletHandler@107ed6fc added {[/]=>org.apache.spark.ui.JettyUtils$$anon$4-1643d68f,POJO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.Server@29ef6856 added {SparkUI{STOPPED,8<=0<=200,i=0,q=0},AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.Server@29ef6856 added {org.spark_project.jetty.server.handler.ErrorHandler@4648ce9,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.Server@29ef6856 added {org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[],MANAGED}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.Server@29ef6856
+INFO main org.spark_project.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.Server@29ef6856
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting SparkUI{STOPPED,8<=0<=200,i=0,q=0}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1580ms SparkUI{STARTED,8<=8<=200,i=7,q=0}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.ErrorHandler@4648ce9
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.ErrorHandler@4648ce9
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1581ms org.spark_project.jetty.server.handler.ErrorHandler@4648ce9
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[]
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1581ms org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[]
+INFO main org.spark_project.jetty.server.Server - Started @1581ms
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1581ms org.spark_project.jetty.server.Server@29ef6856
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - HttpConnectionFactory@2289aca5[HTTP/1.1] added {HttpConfiguration@76a36b71{32768/8192,8192/8192,https://:0,[]},POJO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{null,[]}{0.0.0.0:0} added {org.spark_project.jetty.server.Server@29ef6856,UNMANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{null,[]}{0.0.0.0:0} added {SparkUI{STARTED,8<=8<=200,i=8,q=0},UNMANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{null,[]}{0.0.0.0:0} added {org.spark_project.jetty.util.thread.ScheduledExecutorScheduler@2ce86164,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{null,[]}{0.0.0.0:0} added {org.spark_project.jetty.io.ArrayByteBufferPool@5e8f9e2d,POJO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{null,[http/1.1]}{0.0.0.0:0} added {HttpConnectionFactory@2289aca5[HTTP/1.1],AUTO}
+DEBUG main org.spark_project.jetty.server.AbstractConnector - ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added HttpConnectionFactory@2289aca5[HTTP/1.1]
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:0} added {org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a,MANAGED}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040} added {sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:4040],POJO}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.util.thread.ScheduledExecutorScheduler@2ce86164
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1595ms org.spark_project.jetty.util.thread.ScheduledExecutorScheduler@2ce86164
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting HttpConnectionFactory@2289aca5[HTTP/1.1]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1595ms HttpConnectionFactory@2289aca5[HTTP/1.1]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a added {org.spark_project.jetty.io.ManagedSelector@60bdf15d id=0 keys=-1 selected=-1,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a added {org.spark_project.jetty.io.ManagedSelector@47da3952 id=1 keys=-1 selected=-1,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a added {org.spark_project.jetty.io.ManagedSelector@51e4ccb3 id=2 keys=-1 selected=-1,AUTO}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a added {org.spark_project.jetty.io.ManagedSelector@46e8a539 id=3 keys=-1 selected=-1,AUTO}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.io.ManagedSelector@60bdf15d id=0 keys=-1 selected=-1
+DEBUG main org.spark_project.jetty.util.thread.QueuedThreadPool - queue org.spark_project.jetty.io.ManagedSelector@60bdf15d id=0 keys=0 selected=0
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1599ms org.spark_project.jetty.io.ManagedSelector@60bdf15d id=0 keys=0 selected=0
+DEBUG SparkUI-25 org.spark_project.jetty.util.thread.QueuedThreadPool - run org.spark_project.jetty.io.ManagedSelector@60bdf15d id=0 keys=0 selected=0
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.io.ManagedSelector@47da3952 id=1 keys=-1 selected=-1
+DEBUG SparkUI-25 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Idle/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@1a917e45 execute
+DEBUG SparkUI-25 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@1a917e45 produce enter
+DEBUG SparkUI-25 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@1a917e45 producing
+DEBUG main org.spark_project.jetty.util.thread.QueuedThreadPool - queue org.spark_project.jetty.io.ManagedSelector@47da3952 id=1 keys=0 selected=0
+DEBUG SparkUI-25 org.spark_project.jetty.io.ManagedSelector - Selector loop waiting on select
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1600ms org.spark_project.jetty.io.ManagedSelector@47da3952 id=1 keys=0 selected=0
+DEBUG SparkUI-26 org.spark_project.jetty.util.thread.QueuedThreadPool - run org.spark_project.jetty.io.ManagedSelector@47da3952 id=1 keys=0 selected=0
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.io.ManagedSelector@51e4ccb3 id=2 keys=-1 selected=-1
+DEBUG SparkUI-26 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Idle/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@64b5bf86 execute
+DEBUG main org.spark_project.jetty.util.thread.QueuedThreadPool - queue org.spark_project.jetty.io.ManagedSelector@51e4ccb3 id=2 keys=0 selected=0
+DEBUG SparkUI-26 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@64b5bf86 produce enter
+DEBUG SparkUI-26 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@64b5bf86 producing
+DEBUG SparkUI-27 org.spark_project.jetty.util.thread.QueuedThreadPool - run org.spark_project.jetty.io.ManagedSelector@51e4ccb3 id=2 keys=0 selected=0
+DEBUG SparkUI-27 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Idle/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@2c87b096 execute
+DEBUG SparkUI-27 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@2c87b096 produce enter
+DEBUG SparkUI-27 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@2c87b096 producing
+DEBUG SparkUI-27 org.spark_project.jetty.io.ManagedSelector - Selector loop waiting on select
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1600ms org.spark_project.jetty.io.ManagedSelector@51e4ccb3 id=2 keys=0 selected=0
+DEBUG SparkUI-26 org.spark_project.jetty.io.ManagedSelector - Selector loop waiting on select
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.io.ManagedSelector@46e8a539 id=3 keys=-1 selected=-1
+DEBUG main org.spark_project.jetty.util.thread.QueuedThreadPool - queue org.spark_project.jetty.io.ManagedSelector@46e8a539 id=3 keys=0 selected=0
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1601ms org.spark_project.jetty.io.ManagedSelector@46e8a539 id=3 keys=0 selected=0
+DEBUG SparkUI-28 org.spark_project.jetty.util.thread.QueuedThreadPool - run org.spark_project.jetty.io.ManagedSelector@46e8a539 id=3 keys=0 selected=0
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1601ms org.spark_project.jetty.server.ServerConnector$ServerConnectorManager@1849db1a
+DEBUG SparkUI-28 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Idle/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@3a2547b8 execute
+DEBUG SparkUI-28 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@3a2547b8 produce enter
+DEBUG SparkUI-28 org.spark_project.jetty.util.thread.strategy.ExecuteProduceConsume - EPC Prod/org.spark_project.jetty.io.ManagedSelector$SelectorProducer@3a2547b8 producing
+DEBUG SparkUI-28 org.spark_project.jetty.io.ManagedSelector - Selector loop waiting on select
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040} added {acceptor-0@28a0fd6c,POJO}
+DEBUG main org.spark_project.jetty.util.thread.QueuedThreadPool - queue acceptor-0@28a0fd6c
+INFO main org.spark_project.jetty.server.AbstractConnector - Started ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+DEBUG SparkUI-29 org.spark_project.jetty.util.thread.QueuedThreadPool - run acceptor-0@28a0fd6c
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1602ms ServerConnector@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+INFO main org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.Server@29ef6856 added {Spark@71e5f61d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040},UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f mime types IncludeExclude@72ccd81a{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@6d8792db,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@64bc21ac}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f added {o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@4baf352a
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-47404bea from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-47404bea@539b8e75==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-47404bea=org.apache.spark.ui.JettyUtils$$anon$3-47404bea@539b8e75==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@4baf352a
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1622ms org.spark_project.jetty.servlet.ServletHandler@4baf352a
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-47404bea@539b8e75==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1623ms org.apache.spark.ui.JettyUtils$$anon$3-47404bea@539b8e75==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@4a3e3e8b for org.apache.spark.ui.JettyUtils$$anon$3-47404bea
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1624ms o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1624ms org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27 mime types IncludeExclude@71104a4{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@4985cbcb,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@72f46e16}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27 added {o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@7bc10d84
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-275fe372 from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-275fe372@889c928b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-275fe372=org.apache.spark.ui.JettyUtils$$anon$3-275fe372@889c928b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@7bc10d84
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1626ms org.spark_project.jetty.servlet.ServletHandler@7bc10d84
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-275fe372@889c928b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1627ms org.apache.spark.ui.JettyUtils$$anon$3-275fe372@889c928b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@3c9168dc for org.apache.spark.ui.JettyUtils$$anon$3-275fe372
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1627ms o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1627ms org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce mime types IncludeExclude@549621f3{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@54361a9,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@32232e55}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce added {o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@a5b0b86
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a@37603539==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a=org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a@37603539==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@a5b0b86
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1632ms org.spark_project.jetty.servlet.ServletHandler@a5b0b86
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a@37603539==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1632ms org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a@37603539==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@5217f3d0 for org.apache.spark.ui.JettyUtils$$anon$3-4b3c354a
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1633ms o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1633ms org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5 mime types IncludeExclude@2416a51{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@6fa590ba,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@6e9319f}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5 added {o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@21aa6d6c
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-b968a76 from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-b968a76@7f592bdb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-b968a76=org.apache.spark.ui.JettyUtils$$anon$3-b968a76@7f592bdb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@21aa6d6c
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1637ms org.spark_project.jetty.servlet.ServletHandler@21aa6d6c
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-b968a76@7f592bdb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1637ms org.apache.spark.ui.JettyUtils$$anon$3-b968a76@7f592bdb==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@72e34f77 for org.apache.spark.ui.JettyUtils$$anon$3-b968a76
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1637ms o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1637ms org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098 mime types IncludeExclude@389adf1d{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@77307458,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@1fc0053e}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098 added {o.s.j.s.ServletContextHandler@15c25153{/stages,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@15c25153{/stages,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@15c25153{/stages,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@1252b961
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-9ed238c from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-9ed238c@5413bc58==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-9ed238c=org.apache.spark.ui.JettyUtils$$anon$3-9ed238c@5413bc58==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@1252b961
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1641ms org.spark_project.jetty.servlet.ServletHandler@1252b961
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-9ed238c@5413bc58==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1641ms org.apache.spark.ui.JettyUtils$$anon$3-9ed238c@5413bc58==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@290b1b2e for org.apache.spark.ui.JettyUtils$$anon$3-9ed238c
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1641ms o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1641ms org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25 mime types IncludeExclude@33617539{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@2c177f9e,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@5db4c359}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25 added {o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098, org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25,[o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@56f6d40b
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-36676c1a from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-36676c1a@baa1624d==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-36676c1a=org.apache.spark.ui.JettyUtils$$anon$3-36676c1a@baa1624d==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@56f6d40b
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1644ms org.spark_project.jetty.servlet.ServletHandler@56f6d40b
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-36676c1a@baa1624d==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1644ms org.apache.spark.ui.JettyUtils$$anon$3-36676c1a@baa1624d==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@209775a9 for org.apache.spark.ui.JettyUtils$$anon$3-36676c1a
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1645ms o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1645ms org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f mime types IncludeExclude@f9b7332{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@74cec793,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@6fefce9e}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f added {o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098, org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25, org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25,[o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/stage->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f,[o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@20b5f2ac
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec@91f020ba==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec=org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec@91f020ba==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@20b5f2ac
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1647ms org.spark_project.jetty.servlet.ServletHandler@20b5f2ac
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec@91f020ba==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1647ms org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec@91f020ba==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@4f8969b0 for org.apache.spark.ui.JettyUtils$$anon$3-7fc44dec
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1648ms o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1648ms org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2 mime types IncludeExclude@c65a5ef{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@6b5176f2,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@b672aa8}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2 added {o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098, org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25, org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f, org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/stage/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2,[o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25,[o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/stage->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f,[o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@2692b61e
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-7b64240d from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-7b64240d@718b7c6b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-7b64240d=org.apache.spark.ui.JettyUtils$$anon$3-7b64240d@718b7c6b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@2692b61e
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1651ms org.spark_project.jetty.servlet.ServletHandler@2692b61e
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-7b64240d@718b7c6b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1652ms org.apache.spark.ui.JettyUtils$$anon$3-7b64240d@718b7c6b==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@2fab4aff for org.apache.spark.ui.JettyUtils$$anon$3-7b64240d
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1652ms o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1652ms org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838 mime types IncludeExclude@6e46d9f4{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@5cc69cfe,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@29cfd92b}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838 added {o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098, org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25, org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f, org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2, org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/stage/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2,[o.s.j.s.ServletContextHandler@293d0107{/stages/stage/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5,[o.s.j.s.ServletContextHandler@73ff4fae{/jobs/job/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25,[o.s.j.s.ServletContextHandler@51e8e6e6{/stages/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f,[o.s.j.s.ServletContextHandler@3829ac1{/jobs,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098,[o.s.j.s.ServletContextHandler@15c25153{/stages,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/stage->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f,[o.s.j.s.ServletContextHandler@2dbf4cbd{/stages/stage,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - stages/pool->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838,[o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,null,@Spark}]}]
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,null,@Spark}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,STARTING,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.spark_project.jetty.servlet.ServletHandler@2e54db99
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - Chose path=/ mapped to servlet=org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f from default=false
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - filterNameMap={}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - pathFilters=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletFilterMap=null
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletPathMap={/=org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f@a5d4bb11==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.servlet.ServletHandler - servletNameMap={org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f=org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f@a5d4bb11==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true}
+DEBUG main org.spark_project.jetty.server.handler.AbstractHandler - starting org.spark_project.jetty.servlet.ServletHandler@2e54db99
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1655ms org.spark_project.jetty.servlet.ServletHandler@2e54db99
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - starting org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f@a5d4bb11==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1655ms org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f@a5d4bb11==org.apache.spark.ui.JettyUtils$$anon$3,jsp=null,order=-1,inst=true
+DEBUG main org.spark_project.jetty.servlet.ServletHolder - Servlet.init org.apache.spark.ui.JettyUtils$$anon$3@21c64522 for org.apache.spark.ui.JettyUtils$$anon$3-55e8ec2f
+INFO main org.spark_project.jetty.server.handler.ContextHandler - Started o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1655ms o.s.j.s.ServletContextHandler@74cadd41{/stages/pool,null,AVAILABLE,@Spark}
+DEBUG main org.spark_project.jetty.util.component.AbstractLifeCycle - STARTED @1655ms org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838
+DEBUG main org.spark_project.jetty.server.handler.gzip.GzipHandler - org.spark_project.jetty.server.handler.gzip.GzipHandler@7997b197 mime types IncludeExclude@11dee337{i=[],ip=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@460f76a6,e=[image/ief, image/vnd.wap.wbmp, image/jpeg, application/bzip2, image/x-portable-graymap, image/bmp, image/gif, image/x-icon, audio/midi, video/x-msvideo, image/x-xbitmap, application/x-rar-compressed, image/x-portable-bitmap, image/x-rgb, image/x-cmu-raster, application/gzip, audio/x-wav, audio/basic, audio/x-pn-realaudio, application/compress, audio/x-aiff, video/x.ms.asx, video/x.ms.asf, image/png, video/vnd.rn-realvideo, image/x-xwindowdump, image/jpeg2000, video/x-sgi-movie, audio/mpeg, image/xcf, video/mpeg, image/x-portable-pixmap, image/tiff, image/x-portable-anymap, image/x-xpixmap, application/zip, video/quicktime],ep=org.spark_project.jetty.util.IncludeExcludeSet$SetContainsPredicate@55f3c410}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.gzip.GzipHandler@7997b197 added {o.s.j.s.ServletContextHandler@6d24ffa1{/stages/pool/json,null,null,@Spark},MANAGED}
+DEBUG main org.spark_project.jetty.util.component.ContainerLifeCycle - org.spark_project.jetty.server.handler.ContextHandlerCollection@180e6ac4[org.spark_project.jetty.server.handler.gzip.GzipHandler@593e824f, org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27, org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce, org.spark_project.jetty.server.handler.gzip.GzipHandler@293bb8a5, org.spark_project.jetty.server.handler.gzip.GzipHandler@7bf9b098, org.spark_project.jetty.server.handler.gzip.GzipHandler@47874b25, org.spark_project.jetty.server.handler.gzip.GzipHandler@18e7143f, org.spark_project.jetty.server.handler.gzip.GzipHandler@8a589a2, org.spark_project.jetty.server.handler.gzip.GzipHandler@ec0c838, org.spark_project.jetty.server.handler.gzip.GzipHandler@7997b197] added {org.spark_project.jetty.server.handler.gzip.GzipHandler@7997b197,UNMANAGED}
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/json->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@5af28b27,[o.s.j.s.ServletContextHandler@3234f74e{/jobs/json,null,AVAILABLE,@Spark}]}]
+DEBUG main org.spark_project.jetty.server.handler.ContextHandlerCollection - jobs/job->[{org.spark_project.jetty.server.handler.gzip.GzipHandler@332a7fce,[o.s.j.s.ServletContextHandler@31e75d13{/jobs/job,null,AVAILABLE,@Spark}]}]

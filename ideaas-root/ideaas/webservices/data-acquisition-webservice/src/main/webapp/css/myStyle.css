@@ -1,0 +1,45 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.margin_top30{
+  margin-top: 30px;
+}
+.margin_top20{
+  margin-top: 30px;
+}
+
+.margin_top50 {
+	margin-top: 50px;
+}
+.margin-left30{
+  margin-left: 30px;
+}
+.margin_bottom20{
+  margin-bottom: 20px;
+}
+.navbar-brand{
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.navbar-brand img{
+	height: 50px;
+}

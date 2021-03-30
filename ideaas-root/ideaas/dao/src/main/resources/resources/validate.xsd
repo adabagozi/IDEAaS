@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="Config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BigDataDB">
+                    <xs:complexType>
+                            <xs:sequence>
+                                    <xs:element type="xs:string" name="Server"/>
+                                    <xs:element type="xs:integer" name="Port"/>
+                                    <xs:element type="xs:string" name="DBName"/>
+                                    <xs:element type="xs:string" name="DBUser"/>
+                                    <xs:element type="xs:string" name="DBPassword"/>
+                            </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="MySQLDB">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ModelDB">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="Server"/>
+                                        <xs:element type="xs:integer" name="Port"/>
+                                        <xs:element type="xs:string" name="DBName"/>
+                                        <xs:element type="xs:string" name="DBUser"/>
+                                        <xs:element type="xs:string" name="DBPassword"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="MetamodelDB">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="Server"/>
+                                        <xs:element type="xs:integer" name="Port"/>
+                                        <xs:element type="xs:string" name="DBName"/>
+                                        <xs:element type="xs:string" name="DBUser"/>
+                                        <xs:element type="xs:string" name="DBPassword"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>                   
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>  
+             </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

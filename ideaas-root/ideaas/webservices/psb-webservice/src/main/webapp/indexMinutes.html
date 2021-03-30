@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Synthesi plotting</title>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.sandstone.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.cerulean.min.css">
+		<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+		
+		<script src="js/jquery.min.js"></script>
+
+		<script src="js/jsonToJS.js"></script>
+		<!--<script src="js/jsonHoursToJS.js"></script>-->
+
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="page-header" id="banner">
+				<div class="row">
+					<div class="col-xs-12">	<h1>Dati Sintesi</h1>
+						<p class="lead">Nei seguenti grafici sono plottati i risultati del calcolo delle sintesi ogni <font color="blue"><strong>30 MINUTI</strong></font>.</p>
+						<p>
+							mode = 1 <br>
+							idMachine = 101143 <br>
+							idSpindle = Unit 1.0 <br>
+							idPartProgram = 0171507370 GR6112 <br>
+							featureSpaceID = Corrente - Velocit&agrave; asse Z <br>
+						</p>
+					</div>
+					
+				</div>
+			</div>
+
+			<div id="resultData">
+				<!--<div class="col-xs-12">
+					<div class="col-lg-4 col-md-5 col-sm-12">
+						<h2>Esperimento time: data</h2>
+					</div>
+					<div class="col-lg-8 col-md-7 col-sm-12">
+						<div id="container1" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto;"></div>
+					</div>
+					<hr>
+				</div>
+				<div class="col-xs-12">
+					<div class="col-lg-4 col-md-5 col-sm-12">
+						<h2>Dati Sintesi</h2>
+					</div>
+					<div class="col-lg-8 col-md-7 col-sm-12">
+						<div id="container2" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto;"></div>
+			
+					</div>
+					<hr>
+				</div>-->
+			</div>
+
+			<!--<div class="row">
+
+				
+			</div>-->
+		</div>
+		
+		
+		<script src="js/bootstrap.min.js"></script>
+   		<script src="js/highcharts.js"></script>
+		<script src="js/highcharts-more.js"></script>
+		<script src="js/highcharts_exporting.js"></script>
+		<script src="js/myJS.js"></script>
+		<!---->
+		<script>
+//			getDataFromServer();
+	$( document ).ready(function() {
+			readDataResult(json);
+	});
+		</script>
+	</body>
+</html>
+

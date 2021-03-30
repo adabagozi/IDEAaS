@@ -1,0 +1,12 @@
+Summarised data ogni deltaT: 
+- Se c'è differenza rispetto al clustering prima richiamo lo state detection, altrimenti no.
+    - Se nel summarised trovano degli errori -> Lo state detection smezza il tempo di summarisation.
+	- Non alterare se dista 2volte il raggio (R). Se siamo sotto di 2volte il raggio dimezziamo deltaT.
+	- Chiamiamo d la minima distanza tra raggio e boundary più vicino. 
+	    - d > R consideriamo il rapporto d/R= 2 caso limite; d/R > 2 non facciamo nulla, se inferiore iniziamo a controllare più frequentemente.
+		- d/R >= 2 non faccio nulla
+		- d/R <2 => pongo deltaT = deltaT * (d/R - 1)
+
+- deltaT minimo (come fissare il deltaT a regime, e come fissiamo il minimo) da valutare quando avremo il clustering
+	
+- Se c'è variazione rispetto al caso stabile significa che ci potremmo trovare comunque in uno stato di non variazione

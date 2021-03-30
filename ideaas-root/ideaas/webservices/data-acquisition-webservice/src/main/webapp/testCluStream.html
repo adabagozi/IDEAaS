@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Data Acquisition</title>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.sandstone.min.css"> -->
+<link rel="stylesheet" type="text/css"
+	href="css/bootstrap.cerulean.min.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+<script src="js/jquery.min.js"></script>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Menu</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt=""
+					src="./img/logo.png"></a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-2"></div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="page-header" id="banner">
+			<div class="row margin_bottom30">
+				<div class="row col-xs-12 text-center margin_bottom30">
+					<h1>Test Data Acquisition</h1>
+				</div>
+
+			</div>
+		</div>
+		<div class="row margin_bottom30">
+		<div class="col-xs-12">
+					<form enctype="multipart/form-data" action="./requests/service/saveMeasures" method="POST">
+						<div class="form-group">
+							<label for="filter">Inserire il file di input</label> <input
+								type="file" class="form-control-file"
+								id="inputJsonObj" name = "inputJsonObj">
+						</div>
+	
+						<button type="submit" class="btn btn-primary">Invia</button>
+					</form>
+				</div>
+		</div>
+
+	</div>
+
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/highcharts_exporting.js"></script>
+	<script src="js/cluStreamTest.js"></script>
+	
+</body>
+</html>
